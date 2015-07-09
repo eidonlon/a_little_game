@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+	<div class="container">
+	  <div id="card1" class="card card1" draggable="true">1</div>
+	  <div id="card2" class="card card2" draggable="true">2</div>
+	  <div id="card3" class="card card3" draggable="true">3</div>
+	  <div id="card4" class="card card4" draggable="true">4</div>
+	  <div id="card5" class="card card5" draggable="true">5</div>
+	  <div id="card6" class="card card6" draggable="true">6</div>
+	  <div id="card7" class="card card7" draggable="true">7</div>
+	  <div id="card8" class="card card8" draggable="true">8</div>
+	  <div id="card9" class="card card9" draggable="true">9</div>
+	</div>
+	<div class="des">
+		提示：这是一个数独游戏，把你需要的数字从左边拖动到空格子里，如果错了，就将格子里的数字拖动到垃圾箱。千万不尝试把左边的数字直接拖动到垃圾箱里，切记切记！！
+	</div>
+    <table id="box" cellspacing="0">
+    	<tr>
+    		<td class="color1">8</td>
+    		<td class="color1"></td>
+    		<td class="color1"></td>
+    		<td class="color2"></td>
+    		<td class="color2"></td>
+    		<td class="color2"></td>
+    		<td class="color3"></td>
+    		<td class="color3"></td>
+    		<td class="color3"></td>
+    	</tr>
+        <tr>
+    		<td  class="color1"></td>
+    		<td  class="color1"></td>
+    		<td  class="color1">3</td>
+    		<td  class="color2">6</td>
+    		<td  class="color2"></td>
+    		<td  class="color2"></td>
+    		<td  class="color3"></td>
+    		<td  class="color3"></td>
+    		<td  class="color3"></td>
+    	</tr>
+    	<tr>
+    		<td class="color1"></td>
+    		<td class="color1">7</td>
+    		<td class="color1"></td>
+    		<td class="color2"></td>
+    		<td class="color2">9</td>
+    		<td class="color2"></td>
+    		<td class="color3">2</td>
+    		<td class="color3"></td>
+    		<td class="color3"></td>
+    	</tr>
+    	<tr>
+    		<td class="color4"></td>
+    		<td class="color4">5</td>
+    		<td class="color4"></td>
+    		<td class="color5"></td>
+    		<td class="color5"></td>
+    		<td class="color5">7</td>
+    		<td class="color6"></td>
+    		<td class="color6"></td>
+    		<td class="color6"></td>
+    	</tr>
+     	<tr>
+    		<td class="color4"></td>
+    		<td class="color4"></td>
+    		<td class="color4"></td>
+    		<td class="color5"></td>
+    		<td class="color5">4</td>
+    		<td class="color5">5</td>
+    		<td class="color6">7</td>
+    		<td class="color6"></td>
+    		<td class="color6"></td>
+    	</tr>
+    	<tr>
+    		<td class="color4"></td>
+    		<td class="color4"></td>
+    		<td class="color4"></td>
+    		<td class="color5">1</td>
+    		<td class="color5"></td>
+    		<td class="color5"></td>
+    		<td class="color6"></td>
+    		<td class="color6">3</td>
+    		<td class="color6"></td>
+    	</tr>
+    	<tr>
+    		<td class="color7"></td>
+    		<td class="color7"></td>
+    		<td class="color7">1</td>
+    		<td class="color8"></td>
+    		<td class="color8"></td>
+    		<td class="color8"></td>
+    		<td class="color0"></td>
+    		<td class="color0">6</td>
+    		<td class="color0">8</td>
+    	</tr>
+    	<tr>
+    		<td class="color7"></td>
+    		<td class="color7"></td>
+    		<td class="color7">8</td>
+    		<td class="color8">5</td>
+    		<td class="color8"></td>
+    		<td class="color8"></td>
+    		<td class="color0"></td>
+    		<td class="color0">1</td>
+    		<td class="color0"></td>
+    	</tr>
+    	<tr>
+    		<td class="color7"></td>
+    		<td class="color7">9</td>
+    		<td class="color7"></td>
+    		<td class="color8"></td>
+    		<td class="color8"></td>
+    		<td class="color8"></td>
+    		<td class="color0">4</td>
+    		<td class="color0"></td>
+    		<td class="color0"></td>
+    	</tr>
+    </table>
+    <div class="dd">
+       <input type="button" id="btn" value="看看正确没"><br><br>
+       <p>垃圾箱:</p><br>
+       <div id="delete"></div>
+    </div>
+	<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
